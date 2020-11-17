@@ -6,11 +6,14 @@ import './index.css';
 import './App.css';
 
 import App from './App';
+import ContextContainer from './containers/ContextContainer';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
 	<BrowserRouter>
-		<App />
+		<ContextContainer>
+			<App />
+		</ContextContainer>
 	</BrowserRouter>
 	,
 	document.getElementById('root')
