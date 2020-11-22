@@ -9,7 +9,7 @@ describe('Testing <App />', () => {
 		() => renderWith(withContext, withRouter)(<App />)
 	);
 
-	test('Shows the loading screen and nothing else', () => {
+	test('Shows the basic setup', () => {
 		expect(
 			screen.getByText('Basic Setup:')
 		).toBeInTheDocument();

@@ -9,7 +9,7 @@ describe('Testing <Home />', () => {
 		() => renderWith()(<Home />)
 	);
 
-	test('Renders the Pickers component given no data', () => {
+	test('Renders', () => {
 		expect(
 			screen.getByText('React Skeleton')
 		).toBeInTheDocument();
