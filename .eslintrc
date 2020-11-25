@@ -4,8 +4,12 @@
     "es6": true,
     "node": true
   },
-  "extends": ["eslint:recommended", "react-app",
-    "react-app/jest"
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "extends": [
+    "eslint:recommended", 
+    "plugin:@typescript-eslint/recommended"
   ],
   "parserOptions": {
     "ecmaFeatures": {
@@ -40,6 +44,7 @@
         "after": true
       }
     ],
+    "keyword-spacing": "warn",
     "comma-dangle": ["error", "never"],
     "no-unused-vars": ["warn", {
       "vars": "local"
@@ -65,11 +70,19 @@
       "max": 2,
       "maxEOF": 0
     }],
+    "space-before-function-paren": "warn",
+    "eqeqeq": "error",
     "space-infix-ops": [
       "error",
       {
         "int32Hint": false
       }
-    ]
+    ],
+    "no-mixed-spaces-and-tabs": ["warn", "smart-tabs"],
+    "curly": ["error", "multi"],
+    "handle-callback-err": "error",
+    "one-var": ["error", "never"],
+    "func-call-spacing": ["error", "never"],
+    "dot-location": ["error", "property"]
   }
 }
