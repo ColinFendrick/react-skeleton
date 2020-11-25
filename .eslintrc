@@ -78,6 +78,8 @@
         "int32Hint": false
       }
     ],
+    "arrow-parens": ["warn", "as-needed"],
+    "arrow-body-style": ["warn", "as-needed"],
     "no-mixed-spaces-and-tabs": ["warn", "smart-tabs"],
     "curly": ["error", "multi"],
     "handle-callback-err": "error",
