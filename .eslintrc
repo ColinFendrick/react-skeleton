@@ -68,7 +68,7 @@
       "max": 2,
       "maxEOF": 0
     }],
-    "space-before-function-paren": "warn",
+    "space-before-function-paren": ["warn", "never"],
     "eqeqeq": "error",
     "space-infix-ops": [
       "error",
