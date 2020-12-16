@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useCallback } from 'react';
 import { Switch, Route } from 'react-router-dom';
 
 import useAppContext from './hooks/useAppContext';
@@ -8,7 +8,20 @@ import { Home } from './components';
 const App = () => {
 	const { getTodos, appState } = useAppContext();
 
-	useEffect(() => getTodos(), []);
+	const initialFetch = useCallback(
+		async () => {
+			try {
+				await getTodos();
+			} catch (e) {
+				console.log(e);
+			}
+		}, []
+	);
+
+	useEffect(
+		initialFetch,
+		[initialFetch]
+	);
 
 	return (
 		<>
