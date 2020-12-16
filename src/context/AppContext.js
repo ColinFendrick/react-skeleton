@@ -3,7 +3,7 @@ import { useState, createContext } from 'react';
 const AppContext = createContext([{}, () => {}]);
 
 const AppProvider = ({ children }) => {
-	const [state, setState] = useState(null);
+	const [state, setState] = useState({ todos: {}, error: false });
 
 	return (
 		<AppContext.Provider value={[state, setState]}>

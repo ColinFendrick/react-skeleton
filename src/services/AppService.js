@@ -1,6 +1,6 @@
 import http from '../http-common';
 
-const get = () => http.get('');
+const get = page => http.get(`todos/${page}`);
 
 const service = { get };
 
