@@ -9,7 +9,7 @@ const Home = () => {
     })();
   }, []);
 
-  return <div>React Skeleton</div>;
+  return <div className="text-3xl font-bold underline">React Skeleton</div>;
 };
 
 export default Home;
