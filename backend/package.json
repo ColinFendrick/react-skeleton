@@ -1,0 +1,30 @@
+{
+  "name": "one-page-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "env-cmd -f ./config/prod.env node src/index.js",
+    "dev": "env-cmd -f ./config/dev.env nodemon src/index.js",
+    "test": "env-cmd -f ./config/test.env jest --watch"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "env-cmd": "^10.0.1",
+    "express": "^4.17.1",
+    "jest": "^24.9.0",
+    "mongodb": "^3.1.10",
+    "mongoose": "^5.3.16",
+    "nodemon": "^1.19.3",
+    "supertest": "^4.0.2",
+    "validator": "^11.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.3"
+  }
+}

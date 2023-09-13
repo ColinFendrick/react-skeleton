@@ -1,7 +1,8 @@
-import http from '../http-common';
+import http from "../http-common";
 
-const get = () => http.get('/');
+export const get = () => http.get("/");
+export const getItems = () => http.get("/items");
 
-const service = { get };
+const service = { get, getItems };
 
 export default service;
