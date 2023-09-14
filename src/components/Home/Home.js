@@ -9,7 +9,11 @@ const Home = () => {
     })();
   }, []);
 
-  return <div className="text-3xl font-bold underline">React Skeleton</div>;
+  return (
+    <div className="text-3xl font-bold underline my-custom-style">
+      React Skeleton
+    </div>
+  );
 };
 
 export default Home;
