@@ -1,11 +1,12 @@
 import { useEffect } from "react";
-import AppService from "../../services/AppService";
+import { getItems, getUsers } from "../../services/AppService";
 
 const Home = () => {
   useEffect(() => {
     (async () => {
-      const x = await AppService.getItems();
-      console.log(x);
+      const x = await getItems();
+      const y = await getUsers();
+      console.log(x, y);
     })();
   }, []);
 
