@@ -22,11 +22,38 @@ body {
 }
 
 @layer components {
-  .my-custom-style {
-    color: blue;
+  .custom-table {
+    margin: 1em;
+    width: auto;
   }
-}
-
-.colin {
-  color: blue;
+  .modal-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .modal-inner {
+    width: 25%;
+    height: 25%;
+    background: #666;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .text-field {
+    z-index: 2;
+    background: white;
+    align-self: flex-start;
+  }
+  .delete-button {
+    color: red;
+    font-weight: 600;
+    display: inline-block;
+    text-align: center;
+  }
+  .delete-button:hover {
+    cursor: pointer;
+    font-weight: 900;
+  }
 }
